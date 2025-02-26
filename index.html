@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz dos Animais</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Círculos animados do fundo -->
+    <div class="background-circles">
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+      <div class="circle"></div>
+    </div>
+
+    <div class="quiz-container">
+      <!-- Tela inicial -->
+      <div id="start-screen" class="screen active">
+        <h1>Bem-vindo ao Quiz dos Animais!</h1>
+        <form id="start-form">
+          <div class="input-group">
+            <label for="player-name">Digite seu nome para começar:</label>
+            <input type="text" id="player-name" required placeholder="Seu nome">
+          </div>
+          <button type="submit" class="btn">
+            Começar Quiz
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </button>
+        </form>
+      </div>
+
+      <!-- Tela do quiz -->
+      <div id="quiz-screen" class="screen">
+        <div class="quiz-header">
+          <span id="question-counter" class="counter">Pergunta 1 de 10</span>
+          <span id="score-counter" class="counter">Pontuação: 0</span>
+        </div>
+        
+        <div id="question-icon" class="question-icon"></div>
+        <h2 id="question" class="question-text"></h2>
+        
+        <div id="options" class="options-container"></div>
+        
+        <div id="feedback" class="feedback"></div>
+      </div>
+
+      <!-- Tela de vitória -->
+      <div id="win-screen" class="screen">
+        <div class="trophy-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9H4.5a2.5 2.5 0 0 1 0-5h3.5"/><path d="M18 9h1.5a2.5 2.5 0 0 0 0-5h-3.5"/><path d="M4 22h16"/><path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22"/><path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22"/><path d="M18 2H6v7a6 6 0 0 0 12 0V2Z"/></svg>
+        </div>
+        <h2>Parabéns, <span id="winner-name"></span>!</h2>
+        <p>Você completou o quiz com pontuação perfeita!</p>
+        <p id="final-score" class="final-score">Pontuação Final: 10/10</p>
+        <div class="confetti-container">
+          <span class="confetti">🎉</span>
+          <span class="confetti">🎈</span>
+          <span class="confetti">🎊</span>
+        </div>
+        <button onclick="resetGame()" class="btn">Jogar Novamente</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
