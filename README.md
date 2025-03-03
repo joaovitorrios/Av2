@@ -70,7 +70,7 @@ O desenvolvimento do **Quiz sobre Animais** foi um processo desafiador e educati
 
 Este projeto permitiu aprimorar habilidades em **desenvolvimento web**, reforçando conhecimentos sobre **manipulação do DOM, eventos, estilização responsiva e lógica de programação**.
 
-🔗 **Repositório no GitHub**: [Coloque o link do repositório aqui]
+🔗 **Repositório no GitHub**: [https://github.com/joaovitorrios/Quiz]
 
 ---
 📌 *Desenvolvido como parte das atividades acadêmicas da faculdade.*
